@@ -18,3 +18,6 @@ A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS
 3. Update all currently installed packages
 setup Python environment:
 4. Configure the local timezone to UTC
+
+## Securing server
+1. Adding Key Based login to new user grader
