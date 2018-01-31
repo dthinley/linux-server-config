@@ -9,3 +9,12 @@ A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS
 5. Third-Party Resources
 6. Creator
 
+
+## Summary of software and configuration
+1. Performing basic configuration
+
+2. Create a new user named grader and grant this user sudo permissions
+
+3. Update all currently installed packages
+setup Python environment:
+4. Configure the local timezone to UTC
