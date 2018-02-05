@@ -36,3 +36,20 @@ Change PasswordAuthentication from yes to no (this is only temporary).
 Add the following to the end of the file:
 UseDNS no
 AllowUsers grader
+
+4.b Set up automatic security updates
+Note: This is an extra requirement of the project. However, in a real life, critical application I would not have enabled automatic upgrading of packages. In the interest of stability, upgrages would be applied manually after careful evaluation. We would then phase un upgrades in a dev machine(s) before pushing into production.
+
+We will use the unattended-upgrades package.
+
+sudo apt-get install unattended-upgrades
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+This opens a console application that prompts the user. Select "yes".
+
+Source Ubuntu doecumentation on AutomaticSecurityUpdates.
+
+5. Fix warning sudo: unable to resolve host ip-xx-yy-zz-xyz
+Hostname is in /etc/hostname. Add that hostname to /etc/hosts:
+
+127.0.1.1 ip-xx-yy-zz-xyz
+And reboot the machine
