@@ -28,7 +28,7 @@ $ sudo apt-get update
 
 $ sudo apt-get upgrade
 
-# Change SSH port to 2200 and configure access
+## Change SSH port to 2200 and configure access
 Enter the following command to access the server's SSH configuration file:
 $ sudo nano /etc/ssh/sshd_config
 Change the SSH port from 22 to 2200
@@ -38,7 +38,7 @@ Add the following to the end of the file:
 UseDNS no
 AllowUsers grader
 
-# Set up automatic security updates
+## Set up automatic security updates
 Note: This is an extra requirement of the project. However, in a real life, critical application I would not have enabled automatic upgrading of packages. In the interest of stability, upgrages would be applied manually after careful evaluation. We would then phase un upgrades in a dev machine(s) before pushing into production.
 
 We will use the unattended-upgrades package.
