@@ -49,7 +49,7 @@ This opens a console application that prompts the user. Select "yes".
 
 Source Ubuntu doecumentation on AutomaticSecurityUpdates.
 
-# Fix warning sudo: unable to resolve host ip-xx-yy-zz-xyz
+### Fix warning sudo: unable to resolve host ip-xx-yy-zz-xyz
 Hostname is in /etc/hostname. Add that hostname to /etc/hosts:
 
 127.0.1.1 ip-xx-yy-zz-xyz
