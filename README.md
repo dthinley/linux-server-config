@@ -21,3 +21,18 @@ $ sudo visudo
 This will open up the sudo configuration file. Add the following line below 'root ALL=(ALL:ALL) ALL':
 
 grader ALL=(ALL:ALL) ALL
+
+Update software packages on server instance
+Enter the following lines into the command line interface:
+$ sudo apt-get update
+
+$ sudo apt-get upgrade
+Change SSH port to 2200 and configure access
+Enter the following command to access the server's SSH configuration file:
+$ sudo nano /etc/ssh/sshd_config
+Change the SSH port from 22 to 2200
+Change PermitRootLogin without-password to PermitRootLogin no.
+Change PasswordAuthentication from yes to no (this is only temporary).
+Add the following to the end of the file:
+UseDNS no
+AllowUsers grader
