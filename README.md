@@ -10,14 +10,14 @@ A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS
 6. Creator
 
 
-## Summary of software and configuration
-1. Performing basic configuration
+## Server Instance setup using AWS Lightsail
+Set up an Ubuntu server instance in AWS Lightsail as per Udacity instructions.
 
-2. Create a new user named grader and grant this user sudo permissions
+## Add new user with sudo privileges
+Once you have connected to your Lightsail instance via SSH, type the following into the command line interface to create a new user named 'grader'. Pssword for this instance is 'Gr@der1'.
+$ sudo adduser grader
+Grant the user 'grader' sudo privileges using the following command:
+$ sudo visudo
+This will open up the sudo configuration file. Add the following line below 'root ALL=(ALL:ALL) ALL':
 
-3. Update all currently installed packages
-setup Python environment:
-4. Configure the local timezone to UTC
-
-## Securing server
-1. Adding Key Based login to new user grader
+grader ALL=(ALL:ALL) ALL
