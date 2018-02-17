@@ -60,10 +60,9 @@ Set up an Ubuntu server instance in AWS Lightsail as per Udacity instructions.
 Include following text: "grader ALL=(ALL:ALL) ALL", then save it.
 
 ## Update software packages on server instance
-Enter the following lines into the command line interface:
-$ sudo apt-get update
+	$ sudo apt-get update
 
-$ sudo apt-get upgrade
+	$ sudo apt-get upgrade
 
 ## Change SSH port to 2200 and configure access
 Enter the following command to access the server's SSH configuration file:
