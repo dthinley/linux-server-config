@@ -1,6 +1,18 @@
 ## Linux Server Configuration
 A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS. The server must be secure and serve an application previously developed in the course.
 
+## Quick start
+| Name | Value|
+| --- | --- |
+| IP Address/web address | 54.191.130.12 |
+| SSH Port | 2200 |
+| Username | grader|
+
+To connect to EC2 instance you need the password (supplied separately in the submit process):
+
+    ssh grader@54.191.130.122 -p 2200 -i ~/.ssh/keypair 
+
+
 ## Summary for project setup
 1. Start a new Ubuntu Linux Server instance on Amazon Lightsail at https://aws.amazon.com/lightsail/ and create an AWS account
 2. Click Create instance button on the home page and select Linux/Unix platform, and select OS Only and Ubuntu as blueprint
@@ -34,18 +46,7 @@ Include following text: "grader ALL=(ALL:ALL) ALL", then save it.
 
 	$ sudo apt-get upgrade
 
-grader ALL=(ALL:ALL) ALL
 
-## Quick start
-| Name | Value|
-| --- | --- |
-| IP Address | 54.191.130.12 |
-| SSH Port | 2200 |
-| Username | grader|
-
-To connect to EC2 instance you need the password (supplied separately in the submit process):
-
-    ssh grader@54.191.130.122 -p 2200 -i ~/.ssh/keypair 
 
 
 2. Summary of software and configuration
