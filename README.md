@@ -7,8 +7,13 @@ Start a new Ubuntu Linux Server instance on Amazon Lightsail
 Create an AWS account
 Click Create instance button on the home page
 Select Linux/Unix platform
+
+![](images/screen1.jpg)
+
 Select OS Only and Ubuntu as blueprint
 Select an instance plan
+
+![](images/screen2.jpg)
 Name your instance
 Click Create button
 
