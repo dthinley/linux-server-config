@@ -2,7 +2,7 @@
 A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS. The server must be secure and serve an application previously developed in the course.
 
 ## Summary for project setup
-Start a new Ubuntu Linux Server instance on Amazon Lightsail
+Start a new Ubuntu Linux Server instance on Amazon Lightsail at https://aws.amazon.com/lightsail/
 
 Create an AWS account
 Click Create instance button on the home page
