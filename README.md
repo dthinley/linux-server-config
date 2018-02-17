@@ -10,7 +10,7 @@ Select Linux/Unix platform, and select OS Only and Ubuntu as blueprint
 
 ![](images/screen1.jpg)
 
-Select an instance plan
+### Select an instance plan
 
 ![](images/screen2.jpg)
 Name your instance
