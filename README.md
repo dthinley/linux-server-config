@@ -55,8 +55,8 @@ Set up an Ubuntu server instance in AWS Lightsail as per Udacity instructions.
 	
 		$ sudo adduser grader
 
-2. Create a new file under the suoders directory: 
-		$ sudo nano /etc/sudoers.d/grader. 
+		$ sudo nano /etc/sudoers.d/grader
+		
 Include following text: "grader ALL=(ALL:ALL) ALL", then save it.
 
 ## Update software packages on server instance
