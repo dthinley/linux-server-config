@@ -20,6 +20,14 @@ Once the instance is up and running. You can ssh to log in as admin. Like Ubuntu
 
 	sudo adduser grader
 
+## Add new user with sudo privileges
+Once you have connected to your Lightsail instance via SSH, type the following into the command line interface to create a new user named 'grader'. Pssword for this instance is 'Gr@der1'.
+$ sudo adduser grader
+Grant the user 'grader' sudo privileges using the following command:
+$ sudo visudo
+This will open up the sudo configuration file. Add the following line below 'root ALL=(ALL:ALL) ALL':
+
+grader ALL=(ALL:ALL) ALL
 
 ## Quick start
 | Name | Value|
@@ -43,13 +51,11 @@ To connect to EC2 instance you need the password (supplied separately in the sub
 Set up an Ubuntu server instance in AWS Lightsail as per Udacity instructions.
 
 ## Add new user with sudo privileges
-Once you have connected to your Lightsail instance via SSH, type the following into the command line interface to create a new user named 'grader'. Pssword for this instance is 'Gr@der1'.
-$ sudo adduser grader
-Grant the user 'grader' sudo privileges using the following command:
-$ sudo visudo
-This will open up the sudo configuration file. Add the following line below 'root ALL=(ALL:ALL) ALL':
-
-grader ALL=(ALL:ALL) ALL
+1. Add a new user called grader: 
+	$ sudo adduser grader.
+2. Create a new file under the suoders directory: 
+	$ sudo nano /etc/sudoers.d/grader. 
+Include following text: "grader ALL=(ALL:ALL) ALL", then save it.
 
 ## Update software packages on server instance
 Enter the following lines into the command line interface:
