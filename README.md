@@ -30,14 +30,9 @@ Once the instance is up and running. You can ssh to log in as admin. Like Ubuntu
 
 ## Create a new user named grader and grant this user sudo permissions
 
-	sudo adduser grader
+	$ sudo adduser grader
 
-## Add new user with sudo privileges
-1. Add a new user called grader: 
-	
-		$ sudo adduser grader
-
-		$ sudo nano /etc/sudoers.d/grader
+	$ sudo nano /etc/sudoers.d/grader
 		
 Include following text: "grader ALL=(ALL:ALL) ALL", then save it.
 
