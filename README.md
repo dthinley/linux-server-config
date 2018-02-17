@@ -10,8 +10,9 @@ A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS
 ### Select an instance plan
 
 ![](images/screen2.jpg)
-Name your instance
-Click Create button
+
+3. Name your instance
+4. Click Create button. (Creating instance will take few seconds and will soon be up and running)
 
 ## Quick start
 | Name | Value|
