@@ -14,6 +14,13 @@ A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS
 3. Name your instance
 4. Click Create button. (Creating instance will take few seconds and will soon be up and running)
 
+Once the instance is up and running. You can ssh to log in as admin. Like Ubuntu@ip.
+
+## Create a new user named grader and grant this user sudo permissions
+
+	sudo adduser grader
+
+
 ## Quick start
 | Name | Value|
 | --- | --- |
