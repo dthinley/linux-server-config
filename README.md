@@ -9,6 +9,17 @@ A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS
 5. Third-Party Resources
 6. Creator
 
+| Name | Value|
+| --- | --- |
+| IP Address | 54.191.130.12 |
+| SSH Port | 2200 |
+| Username | grader|
+
+To connect to EC2 instance you need the password (supplied separately in the submit process):
+
+    ssh grader@54.191.130.122 -p 2200 -i ~/.ssh/keypair 
+
+
 
 ## Server Instance setup using AWS Lightsail
 Set up an Ubuntu server instance in AWS Lightsail as per Udacity instructions.
