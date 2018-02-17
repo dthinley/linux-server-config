@@ -2,11 +2,8 @@
 A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS. The server must be secure and serve an application previously developed in the course.
 
 ## Summary for project setup
-Start a new Ubuntu Linux Server instance on Amazon Lightsail at https://aws.amazon.com/lightsail/
-
-Create an AWS account
-Click Create instance button on the home page
-Select Linux/Unix platform, and select OS Only and Ubuntu as blueprint
+1. Start a new Ubuntu Linux Server instance on Amazon Lightsail at https://aws.amazon.com/lightsail/ and create an AWS account
+2. Click Create instance button on the home page and select Linux/Unix platform, and select OS Only and Ubuntu as blueprint
 
 ![](images/screen1.jpg)
 
