@@ -51,8 +51,9 @@ Change the SSH port from 22 to 2200
 1. Generate keys-pair on local machine using:
 	
 		$ ssh-keygen 
+
 Detail guide in can be found:
-https://classroom.udacity.com/nanodegrees/nd004/parts/ab002e9a-b26c-43a4-8460-dc4c4b11c379/modules/357367901175461/lessons/4331066009/concepts/48010894770923
+[Detail guide in can be found:](https://classroom.udacity.com/nanodegrees/nd004/parts/ab002e9a-b26c-43a4-8460-dc4c4b11c379/modules/357367901175461/lessons/4331066009/concepts/48010894770923)
 
 2 Login into grader account using sudo login grader. 
 3. On your local machine, read the generated public key 
