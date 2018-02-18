@@ -20,7 +20,7 @@ https://classroom.udacity.com/nanodegrees/nd004/parts/ab002e9a-b26c-43a4-8460-dc
 
 Once the instance is up and running. You can ssh to log in as admin. Like Ubuntu@ip.
 
-## Create a new user named grader and grant this user sudo permissions
+## 1. Create a new user named grader and grant this user sudo permissions
 
 	$ sudo adduser grader
 
@@ -28,7 +28,7 @@ Once the instance is up and running. You can ssh to log in as admin. Like Ubuntu
 		
 Include following text: "grader ALL=(ALL:ALL) ALL", then save it.
 
-## Update software packages on server instance
+## 2. Update software packages on server instance
 	$ sudo apt-get update
 
 	$ sudo apt-get upgrade
