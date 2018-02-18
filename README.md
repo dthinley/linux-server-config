@@ -13,11 +13,10 @@ To connect to EC2 instance you need the password (supplied separately in the sub
     ssh grader@54.191.130.122 -p 2200 -i ~/.ssh/keypair 
 
 
+
 ## Project setup
 Start a new Ubuntu Linux Server instance on Amazon Lightsail at https://aws.amazon.com/lightsail/ and create an AWS account.
-[Detail steps to steps guide can be found at ]
-(https://classroom.udacity.com/nanodegrees/nd004/parts/ab002e9a-b26c-43a4-8460-dc4c4b11c379/modules/357367901175462/lessons/3573679011239847/concepts/c4cbd3f2-9adb-45d4-8eaf-b5fc89cc606e)
-
+[Detail steps to steps guide can be found at](https://classroom.udacity.com/nanodegrees/nd004/parts/ab002e9a-b26c-43a4-8460-dc4c4b11c379/modules/357367901175462/lessons/3573679011239847/concepts/c4cbd3f2-9adb-45d4-8eaf-b5fc89cc606e)
 Once the instance is up and running. You can ssh to log in as admin. Like Ubuntu@ip.
 
 ## 1. Create a new user named grader and grant this user sudo permissions
