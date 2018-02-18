@@ -1,5 +1,6 @@
 ## Linux Server Configuration
-A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS. The server must be secure and serve an application previously developed in the course.
+A project for a setup and configure a Linux (Ubuntu) web server using Amazon AWS. The server must be secure and serve an application previously developed in the course.[Project Live](http://54.191.130.122)
+
 
 ## Quick start
 | Name | Value|
