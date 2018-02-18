@@ -32,6 +32,7 @@ Once the instance is up and running. You can ssh to log in as admin. Like Ubuntu
 
 ## 3. Change SSH port to 2200 and configure access
 	$ sudo nano /etc/ssh/sshd_config
+
 Change the SSH port from 22 to 2200
 
 
