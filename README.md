@@ -33,72 +33,19 @@ Include following text: "grader ALL=(ALL:ALL) ALL", then save it.
 
 	$ sudo apt-get upgrade
 
-
-
-
-2. Summary of software and configuration
-3. Securing server
-4. User management
-5. Third-Party Resources
-6. Creator
-
-## Server Instance setup using AWS Lightsail
-Set up an Ubuntu server instance in AWS Lightsail as per Udacity instructions.
-
-
-
-## Change SSH port to 2200 and configure access
-Enter the following command to access the server's SSH configuration file:
-$ sudo nano /etc/ssh/sshd_config
+## 3. Change SSH port to 2200 and configure access
+	$ sudo nano /etc/ssh/sshd_config
 Change the SSH port from 22 to 2200
-Change PermitRootLogin without-password to PermitRootLogin no.
-Change PasswordAuthentication from yes to no (this is only temporary).
-Add the following to the end of the file:
-UseDNS no
-AllowUsers grader
 
-Setup and enble a virtual host
-Create file: $ sudo touch /etc/apache2/sites-available/catalog.conf
-Add the following to the file:
-   <VirtualHost *:80>
-		ServerName XX.XX.XX.XX
-		ServerAdmin admin@xx.xx.xx.xx
-		WSGIScriptAlias / /var/www/catalog/catalog.wsgi
-		<Directory /var/www/catalog/catalog/>
-			Order allow,deny
-			Allow from all
-			Options -Indexes
-		</Directory>
-		Alias /static /var/www/catalog/catalog/static
-		<Directory /var/www/catalog/catalog/static/>
-			Order allow,deny
-			Allow from all
-			Options -Indexes
-		</Directory>
-		ErrorLog ${APACHE_LOG_DIR}/error.log
-		LogLevel warn
-		CustomLog ${APACHE_LOG_DIR}/access.log combined
-   </VirtualHost>
-Run $ sudo a2ensite catalog to enable the virtual host
-Restart Apache: $ sudo service apache2 reload
-Configure .wsgi file
-Create file: $ sudo touch /var/www/catalog/catalog.wsgi
-Add content below to this file and save:
-   #!/usr/bin/python
-   import sys
-   import logging
-   logging.basicConfig(stream=sys.stderr)
-   sys.path.insert(0,"/var/www/nuevoMexico/")
 
-   from nuevoMexico import app as application
-   application.secret_key = 'super_secret_key'
-Restart Apache: $ sudo service apache2 reload
-Edit the database path
-Replace lines in __init__.py, database_setup.py, and lotsofitems.py with engine = create_engine('postgresql://catalog:INSERT_PASSWORD_FOR_DATABASE_HERE@localhost/catalog')
-Disable defualt Apache page
-$ sudo a2dissite 000-defualt.conf
-Restart Apache: $ sudo service apache2 reload
-Set up database schema
-Run $ sudo python database_setup.py
-Run $ sudo python lotsofitems.py
-Restart Apache: $ sudo service apache2 reload
+## 4. Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)
+	sudo ufw allow 2200/tcp
+	sudo ufw allow 80/tcp
+	sudo ufw allow 123/udp
+	sudo ufw enable
+	
+## 5. Configure the local timezone to UTC
+Run sudo dpkg-reconfigure tzdata and then choose UTC
+
+
+
