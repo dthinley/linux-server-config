@@ -137,8 +137,8 @@ Create a catalog.wsgi file:
 	
 ## 12. Update path of client_secrets.json file
 	nano __init__.py
-	Change client_secrets.json path to /var/www/catalog/catalog/client_secrets.json
-	
+	Change client_secrets.json path to open(r'/var/www/catalog/Projectcatalog/client_secrets.json', 'r').read())
+
 ## 13. Configure and enable a new virtual host
 	$ sudo nano /etc/apache2/sites-available/Projectcatalog.conf
 
